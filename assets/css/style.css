@@ -19,12 +19,12 @@ html {
     text-align: center;
     margin: 0 auto;
     transform-style: preserve-3d;
-    transition: 0.6s;
+    transition: 2s;
 }
 
-.container:hover .business-card,
+.container .business-card:hover,
 .back {
-  transform: rotateY(180deg) translateZ(1px);
+    transform: rotateY(180deg) translateZ(1px);
 }
 
 .front {
@@ -39,7 +39,6 @@ html {
     width: 100%;
     height: 100%;
     backface-visibility: hidden;
-    /* Fix Chrome rendering bug */
     transform: rotate(0deg) translateZ(1px);
 }
 
